@@ -1,0 +1,5 @@
+x$Time <- strptime(paste(x$Date,x$Time),"%d/%m/%Y %H:%M:%S")
+plot(x$Time,x$Global_active_power,xlab="",ylab="Global Active Power(kilowatts)", type ="l")
+dev.copy(png,file ="plot2.png")
+png(filename="plot2.png", width=480,height=480)
+dev.off()
